@@ -1,5 +1,14 @@
 {
     "name": "VickMachineBot",    
+    "buildpacks": [{
+      "url": "heroku/python"
+    }],
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
     "env": {
         "BOT_TOKEN": {
             "description": "telegram bot token here",
